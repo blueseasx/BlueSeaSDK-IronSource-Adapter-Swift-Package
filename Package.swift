@@ -18,7 +18,7 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         .package(
             url: "https://github.com/blueseasx/BlueSeaSDK-Swift-Package.git",
-            exact: "1.7.1"
+            exact: "1.9.0"
         ),
         .package(
             url: "https://github.com/ironsource-mobile/Unity-Mediation-iAds-Swift-Package.git",
@@ -43,8 +43,8 @@ let package = Package(
             ),
             .binaryTarget(
                 name: "BlueSeaIronSourceAdapter",
-                url: "https://sdk.cdn.blueseasx.com/ios/V1.7.1/2026090900/adapter-V1.7.1.0/BlueSeaISAdapter.xcframework.zip",
-                checksum: "eabddeccc6efcb3e4c2a0fa833f21886f96fd05d8f52f20b560191206712fb49"
+                url: "https://sdk.cdn.blueseasx.com/ios/V1.9.0/2026091500/adapter-V1.9.0.0/BlueSeaISAdapter.xcframework.zip",
+                checksum: "052b7134e21fe9900518ce638a0c430573fbb3ec4b589be8e69e82d9e924dff0"
             ),
         ]
 )

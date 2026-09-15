@@ -11,7 +11,7 @@ The BlueSea iOS Adapter for IronSource Mediation, distributed via Swift Package 
    ```
    https://github.com/blueseasx/BlueSeaSDK-IronSource-Adapter-Swift-Package
    ```
-3. Select **Exact Version** and enter the encoded version (e.g. `1070100.0.0` for adapter version `1.7.1.0`).
+3. Select **Exact Version** and enter the encoded version (e.g. `1090000.0.0` for adapter version `1.9.0.0`).
 4. Add the `BlueSeaIronSourceAdapter` product to your app target.
 
 ### Package.swift
@@ -20,7 +20,7 @@ The BlueSea iOS Adapter for IronSource Mediation, distributed via Swift Package 
 dependencies: [
     .package(
         url: "https://github.com/blueseasx/BlueSeaSDK-IronSource-Adapter-Swift-Package.git",
-        exact: "1070100.0.0"
+        exact: "1090000.0.0"
     )
 ]
 ```
