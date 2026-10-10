@@ -1,4 +1,4 @@
-// swift-tools-version: 6.3
+// swift-tools-version:5.6
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -18,11 +18,11 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         .package(
             url: "https://github.com/blueseasx/BlueSeaSDK-Swift-Package.git",
-            exact: "1.9.0"
+            exact: "1.9.1"
         ),
         .package(
             url: "https://github.com/ironsource-mobile/Unity-Mediation-iAds-Swift-Package.git",
-            from: "9.5.0"
+            from: "9.0.0"
         ),
     ],
     targets: [
@@ -34,17 +34,12 @@ let package = Package(
                     .product(name: "BlueSeaSDK", package: "BlueSeaSDK-Swift-Package"),
                     .product(name: "UnityMediationSDK", package: "Unity-Mediation-iAds-Swift-Package"),
                 ],
-                path: "Sources",
-                linkerSettings: [
-                    // NOTE: Swift Package Manager currently does not allow dependencies with unsafeFlags, unless a specific branch/commit is used.
-                    // For now, these flags should be added manually to the project for integration.
-                    .unsafeFlags(["-ObjC"])
-                ]
+                path: "Sources"
             ),
             .binaryTarget(
                 name: "BlueSeaIronSourceAdapter",
-                url: "https://sdk.cdn.blueseasx.com/ios/V1.9.0/2026091500/adapter-V1.9.0.0/BlueSeaISAdapter.xcframework.zip",
-                checksum: "052b7134e21fe9900518ce638a0c430573fbb3ec4b589be8e69e82d9e924dff0"
+                url: "https://sdk.cdn.blueseasx.com/ios/V1.9.1/2026101000/adapter-V1.9.1.0/BlueSeaISAdapter.xcframework.zip",
+                checksum: "e4bb583b4a543ddde9c9075b2ce703bbe0bfc64fd93a40b0239ae5aa1246e1d6"
             ),
         ]
 )
